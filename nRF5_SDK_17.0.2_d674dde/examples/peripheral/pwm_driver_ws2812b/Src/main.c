@@ -85,7 +85,7 @@ int main( void )
 {
    static uint8_t i;
   
-   init_bsp();
+   init_clk();
 
    WS2812B_init();
 

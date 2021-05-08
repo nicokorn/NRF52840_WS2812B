@@ -248,7 +248,7 @@
                 <expressions>
                     <item>[53]</item>
                     <item>WS2812B_Buffer</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

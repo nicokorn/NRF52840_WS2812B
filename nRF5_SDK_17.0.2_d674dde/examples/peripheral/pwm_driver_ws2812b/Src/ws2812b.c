@@ -67,7 +67,7 @@ nrf_pwm_sequence_t const seq =
     .values.p_common = WS2812B_Buffer,
     .length          = NRF_PWM_VALUES_LENGTH(WS2812B_Buffer),
     .repeats         = 0,
-    .end_delay       = 1500 //1500
+    .end_delay       = 0 //1500
 };
 
 // Private function prototypes ************************************************
@@ -77,7 +77,7 @@ nrf_pwm_sequence_t const seq =
 // Functions ******************************************************************
 // ----------------------------------------------------------------------------
 /// \brief     PWM handler callback function. Used to reset the transmission
-///            complete booleaa.
+///            complete  boolean.
 ///
 /// \param     none
 ///
@@ -104,7 +104,8 @@ WS2812B_StatusTypeDef WS2812B_init( void )
   
    for(uint8_t i=0; i<RESET_ZEROS_AT_START; i++)
    {
-      WS2812B_Buffer[i] = 0x8000;
+      //WS2812B_Buffer[i] = 0x8000;
+      WS2812B_Buffer[PIXEL_COUNT*PIXEL_BIT_SIZE+i] = 0x8000;
    }
 
     nrf_drv_pwm_config_t const config0 =
@@ -155,7 +156,8 @@ void WS2812B_clearBuffer( void )
 {
    for( uint16_t i=0; i<PIXEL_COUNT*PIXEL_BIT_SIZE; i++ )
    {
-      WS2812B_Buffer[RESET_ZEROS_AT_START+i] = WS2812B_0;
+      //WS2812B_Buffer[RESET_ZEROS_AT_START+i] = WS2812B_0;
+      WS2812B_Buffer[i] = WS2812B_0;
    }
 }
 
@@ -171,27 +173,33 @@ void WS2812B_setPixel( uint16_t pixel_pos, uint8_t red, uint8_t green, uint8_t b
   {
     if( (0x80 & (red<<i)) == 0x80 )
     {
-      WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_1;
+      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_1;
+      WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_1;
     }
     else
     {
-      WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_0;
+      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_0;
+      WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_0;
     }
     if( (0x80 & (green<<i)) == 0x80 )
     {
-      WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_1;
+      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_1;
+      WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_1;
     }
     else
     {
-      WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_0;
+      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_0;
+      WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_0;
     }
     if( (0x80 & (blue<<i)) == 0x80 )
     {
-      WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_1;
+      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_1;
+      WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_1;
     }
     else
     {
-      WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_0;
+      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_0;
+      WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_0;
     }
   }
 }
