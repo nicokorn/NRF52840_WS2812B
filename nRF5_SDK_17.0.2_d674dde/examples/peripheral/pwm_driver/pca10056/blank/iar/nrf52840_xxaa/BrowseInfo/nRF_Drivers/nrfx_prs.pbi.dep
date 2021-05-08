@@ -1,0 +1,66 @@
+C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\nrf52840_xxaa\BrowseInfo\nRF_Drivers\nrfx_prs.pbi: \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\modules\nrfx\drivers\src\prs\nrfx_prs.c \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\nrfx.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\integration\nrfx\nrfx_config.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\config\sdk_config.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\drivers/nrfx_common.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Full.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stddef.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ysizet.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdbool.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk\nrf.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include\core_cm4.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include/cmsis_version.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include/cmsis_compiler.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_iccarm.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include/mpu_armv7.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/system_nrf52840.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840_bitfields.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf51_to_nrf52840.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf52_to_nrf52840.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/compiler_abstraction.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk\nrf_peripherals.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840_peripherals.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\integration\nrfx\nrfx_glue.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\integration\nrfx\legacy/apply_old_config.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\soc/nrfx_irqs.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\soc/nrfx_irqs_nrf52840.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\nrf_assert.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\app_util.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk\compiler_abstraction.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/nordic_common.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\nordic_common.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\app_util_platform.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/nrf_assert.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/app_error.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdio.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/sdk_errors.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/app_error_weak.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\soc/nrfx_coredep.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\soc/nrfx_atomic.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\sdk_errors.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\sdk_resources.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\drivers/nrfx_errors.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\modules\nrfx\drivers\src\prs/nrfx_prs.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\integration\nrfx\nrfx_log.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\log\nrf_log.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\sdk_common.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\string.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/sdk_os.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/app_util.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/sdk_macros.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\experimental_section_vars\nrf_section.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\log\src\nrf_log_internal.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\log\nrf_log_instance.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\log/nrf_log_types.h \
+  C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\log\nrf_log_types.h

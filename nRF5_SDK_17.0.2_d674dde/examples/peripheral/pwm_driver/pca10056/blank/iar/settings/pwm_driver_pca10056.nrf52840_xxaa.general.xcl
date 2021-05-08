@@ -1,0 +1,13 @@
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armPROC.dll" 
+
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armJLINK.dll" 
+
+"C:\Users\nico1\Projekte\Nordic\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver\pca10056\blank\iar\_build\pwm_driver_pca10056.out" 
+
+--plugin="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\debugger\NordicSemi\nRF52_2.dmac" 
+
+
+
+
