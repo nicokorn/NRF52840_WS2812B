@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <settings>
     <DebugChecksum>
-        <Checksum>33357253</Checksum>
+        <Checksum>2993282681</Checksum>
     </DebugChecksum>
     <PlDriver>
-        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\NordicSemi\nRF52840_xxAA.ddf</MemConfigValue>
         <FirstRun>0</FirstRun>
+        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\NordicSemi\nRF52840_xxAA.ddf</MemConfigValue>
     </PlDriver>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -61,7 +61,8 @@
         <EnableCache>0</EnableCache>
     </ArmDriver>
     <array_types>
-        <Fmt0>nrf_pwm_values_common_t[70]	4	0</Fmt0>
+        <Fmt0>nrf_pwm_values_common_t[64]	4	0</Fmt0>
+        <Fmt1>nrf_pwm_values_common_t[70]	4	0</Fmt1>
     </array_types>
     <Trace2>
         <Enabled>0</Enabled>
@@ -108,12 +109,6 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Count>0</Count>
-    </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -123,10 +118,6 @@
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
-    <Aliases>
-        <Count>0</Count>
-        <SuppressDialog>0</SuppressDialog>
-    </Aliases>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>
@@ -139,4 +130,15 @@
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 0 "EMUL_CODE" "{C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\main.c}.227.7" 0 0 1 "" 0 "" 0</Bp0>
+        <Count>1</Count>
+    </Breakpoints2>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
 </settings>

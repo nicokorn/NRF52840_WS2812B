@@ -307,6 +307,7 @@
                     <state>--diag_suppress Pe111</state>
                     <state>--diag_suppress Pe177</state>
                     <state>--diag_suppress Pe550</state>
+                    <state>--diag_suppress Pe186</state>
                 </option>
                 <option>
                     <name>CCLangConformance</name>
@@ -377,6 +378,7 @@
                     <state>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk</state>
                     <state>$PROJ_DIR$\..\config</state>
+                    <state>$PROJ_DIR$\..\..\..\Inc</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1117,12 +1119,24 @@
     </configuration>
     <group>
         <name>Application</name>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\main.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\config\sdk_config.h</name>
-        </file>
+        <group>
+            <name>Inc</name>
+            <file>
+                <name>$PROJ_DIR$\..\config\sdk_config.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\Inc\ws2812b.h</name>
+            </file>
+        </group>
+        <group>
+            <name>Src</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\Src\main.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\Src\ws2812b.c</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>Board Definition</name>

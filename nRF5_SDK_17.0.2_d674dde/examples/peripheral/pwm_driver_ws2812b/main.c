@@ -112,13 +112,6 @@ static void WS2812B_pwmhandler(nrf_drv_pwm_evt_type_t event_type)
 
 static void init_pwm(void)
 {
-    /*
-     * This demo uses only one channel, which is reflected on LED 1.
-     * The LED blinks three times (200 ms on, 200 ms off), then it stays off
-     * for one second.
-     * This scheme is performed three times before the peripheral is stopped.
-     */
-  
    nrf_gpio_cfg_output(WS2812B);
    nrf_gpio_pin_clear(WS2812B);
   
@@ -131,7 +124,7 @@ static void init_pwm(void)
     {
         .output_pins =
         {
-            WS2812B | NRF_DRV_PWM_PIN_INVERTED, // channel 0 NRF_DRV_PWM_PIN_INVERTED
+            WS2812B, // channel 0 NRF_DRV_PWM_PIN_INVERTED
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 1
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 2
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 3

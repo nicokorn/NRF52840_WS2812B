@@ -73,6 +73,8 @@ C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dd
 -I
 C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\config
 -I
+C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\Inc
+-I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
@@ -140,6 +142,8 @@ C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dd
 C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\modules\nrfx\mdk
 -I
 C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\config
+-I
+C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\Inc
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
