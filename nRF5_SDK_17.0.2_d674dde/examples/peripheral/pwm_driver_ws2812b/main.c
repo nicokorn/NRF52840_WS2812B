@@ -69,9 +69,9 @@
 #define ROW                      ( 1u )
 #define COL                      ( 17u )
 #define SIZE_PIX                 ( 24u )
-#define PERIOD                   ( 20u) //20
-#define WS2812B_1                ( 15u ) //15
-#define WS2812B_0                ( 6u )  //6
+#define PERIOD                   ( 20u | 0x8000 ) //20
+#define WS2812B_1                ( 15u | 0x8000 ) //15
+#define WS2812B_0                ( 6u | 0x8000 )  //6
 #define WS2812B_PIN              ( 4u ) //16
 #define WS2812B_PORT             ( 0u )   //0
 #define WS2812B                   NRF_GPIO_PIN_MAP(WS2812B_PORT,WS2812B_PIN)
@@ -82,9 +82,9 @@
 #define ROW                      ( 1u )
 #define COL                      ( 1u )
 #define SIZE_PIX                 ( 24u )
-#define PERIOD                   ( 20u) //20
-#define WS2812B_1                ( 15u ) //15
-#define WS2812B_0                ( 6u )  //6
+#define PERIOD                   ( 20u | 0x8000 ) //20
+#define WS2812B_1                ( 15u | 0x8000 ) //15
+#define WS2812B_0                ( 6u | 0x8000 )  //6
 #define WS2812B_PIN              ( 16u ) //16
 #define WS2812B_PORT             ( 0u )   //0
 #define WS2812B                   NRF_GPIO_PIN_MAP(WS2812B_PORT,WS2812B_PIN)
@@ -93,7 +93,7 @@
 
 static bool WS2812B_TX_CPLT; 
 static nrf_drv_pwm_t m_pwm0 = NRF_DRV_PWM_INSTANCE(0);
-static nrf_pwm_values_common_t WS2812B_Buffer[RESET_ZEROS_AT_START+ROW*COL*SIZE_PIX+1]; // 17*1*24=408
+static nrf_pwm_values_common_t WS2812B_Buffer[RESET_ZEROS_AT_START+ROW*COL*SIZE_PIX]; // 17*1*24=408
 nrf_pwm_sequence_t const seq =
 {
     .values.p_common = WS2812B_Buffer,
@@ -131,7 +131,7 @@ static void init_pwm(void)
     {
         .output_pins =
         {
-            WS2812B|NRF_DRV_PWM_PIN_INVERTED, // channel 0 NRF_DRV_PWM_PIN_INVERTED
+            WS2812B | NRF_DRV_PWM_PIN_INVERTED, // channel 0 NRF_DRV_PWM_PIN_INVERTED
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 1
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 2
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 3
@@ -229,9 +229,9 @@ int main(void)
         //__WFE();
       i++;
       WS2812B_clearBuffer();
-      WS2812B_setPixel(0,i%COL,0xFF,0,0);//rand()%0xFF,rand()%0xFF,rand()%0xFF
+      WS2812B_setPixel(0,i%COL,0,i,0);//rand()%0xFF,rand()%0xFF,rand()%0xFF
       WS2812B_sendBuffer();
-      //nrf_delay_ms(100);
+      nrf_delay_ms(100);
       
    }
 }
