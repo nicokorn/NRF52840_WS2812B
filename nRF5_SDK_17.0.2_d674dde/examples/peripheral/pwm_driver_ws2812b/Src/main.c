@@ -93,7 +93,7 @@ int main( void )
    {
       i++;
       WS2812B_clearBuffer();
-      WS2812B_setPixel(i%PIXEL_COUNT,i,0,0);//rand()%0xFF,rand()%0xFF,rand()%0xFF
+      WS2812B_setPixel(i%PIXEL_COUNT,0xff,0,0);//rand()%0xFF,rand()%0xFF,rand()%0xFF
       WS2812B_sendBuffer();
       nrf_delay_ms(10); 
    }

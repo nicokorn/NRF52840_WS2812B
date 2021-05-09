@@ -49,13 +49,13 @@
 #include "nrf.h"
 
 // Exported defines ***********************************************************
-#define ONBOARD_LED
-//#define STRIPE_LED
+//#define ONBOARD_LED
+#define STRIPE_LED
 
 #ifdef STRIPE_LED
 #define PIXEL_COUNT              ( 18u )
 #define PIXEL_BIT_SIZE           ( 24u )
-#define PERIOD                   ( 20u | 0x8000 ) //20
+#define PERIOD                   ( 20u ) //20
 #define WS2812B_1                ( 15u | 0x8000 ) //15
 #define WS2812B_0                ( 6u | 0x8000 )  //6
 #define WS2812B_PIN              ( 4u ) //16
