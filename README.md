@@ -21,9 +21,9 @@ array entity. A future version will solve this issue.
 <body>
 
 <h2>The ws2812b example</h2>
-<img src="https://github.com/nicokorn/STM32F1XX_WS2812B/blob/main/docs/WS2812B.jpg" alt="st32f1xx_ws2812b1">
+<img src="https://github.com/nicokorn/NRF52840_WS2812B/blob/main/docs/WS2812B.jpg" alt="st32f1xx_ws2812b1">
 <h2>WS2812B protocol timing and signal</h2>
-<img src="https://github.com/nicokorn/STM32F1XX_WS2812B/blob/main/docs/WS2812B_Protocol_1.PNG" alt="st32f1xx_ws2812b2">
+<img src="https://github.com/nicokorn/NRF52840_WS2812B/blob/main/docs/WS2812B_Protocol_1.PNG" alt="st32f1xx_ws2812b2">
 
 </body>
 </html>
