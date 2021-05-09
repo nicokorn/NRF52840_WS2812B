@@ -67,7 +67,7 @@ nrf_pwm_sequence_t const seq =
     .values.p_common = WS2812B_Buffer,
     .length          = NRF_PWM_VALUES_LENGTH(WS2812B_Buffer),
     .repeats         = 0,
-    .end_delay       = 0 //1500
+    .end_delay       = 0
 };
 
 // Private function prototypes ************************************************
@@ -91,7 +91,7 @@ void WS2812B_pwmhandler( nrf_drv_pwm_evt_type_t event_type )
 }
 
 // ----------------------------------------------------------------------------
-/// \brief     ...
+/// \brief     Initialisation of the periphherals for using the ws2812b leds.
 ///
 /// \param     none
 ///
@@ -120,7 +120,7 @@ WS2812B_StatusTypeDef WS2812B_init( void )
         .irq_priority = APP_IRQ_PRIORITY_HIGHEST,
         .base_clock   = NRF_PWM_CLK_16MHz,
         .count_mode   = NRF_PWM_MODE_UP,
-        .top_value    = PERIOD,
+        .top_value    = WS2812B_PWM_T,
         .load_mode    = NRF_PWM_LOAD_COMMON,
         .step_mode    = NRF_PWM_STEP_AUTO
     };
@@ -132,7 +132,7 @@ WS2812B_StatusTypeDef WS2812B_init( void )
 }
 
 // ----------------------------------------------------------------------------
-/// \brief     ...
+/// \brief     Send buffer to the ws2812b leds.
 ///
 /// \param     none
 ///
@@ -147,7 +147,7 @@ void WS2812B_sendBuffer( void )
 }
 
 // ----------------------------------------------------------------------------
-/// \brief     ...
+/// \brief      Clear ws2812b buffer. All pixels are black after sending.
 ///
 /// \param     none
 ///
@@ -162,11 +162,14 @@ void WS2812B_clearBuffer( void )
 }
 
 // ----------------------------------------------------------------------------
-/// \brief     ...
+/// \brief      This function sets the color of a single pixel.
 ///
-/// \param     none
+/// \param      [in]    uint16_t pixel_pos
+/// \param      [in]    uint8_t red
+/// \param      [in]    uint8_t green
+/// \param      [in]    uint8_t blue
 ///
-/// \return    none
+/// \return     none
 void WS2812B_setPixel( uint16_t pixel_pos, uint8_t red, uint8_t green, uint8_t blue )
 {
   for( uint8_t i=0; i<8; i++)
