@@ -5,552 +5,228 @@
     <configuration>
         <name>nrf52840_xxaa</name>
         <outputs>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_rtt.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_uart.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_default_backends.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_frontend.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_str_formatter.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_printf.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_Syscalls_IAR.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_power_clock.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_bitmask.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\drv_rtc.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_atomic.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_drv_uart.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp_config.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\app_error_weak.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\app_error_handler_iar.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_atfifo.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\nrfx_glue.h</file>
-            <file>$PROJ_DIR$\pwm_driver_iar_nRF5x.icf</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_soc.o</file>
-            <file>$PROJ_DIR$\_build\None\iar_startup_nrf52840.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\drv_rtc.o</file>
-            <file>$PROJ_DIR$\_build\None\iar_startup_nrf52840.o.rsp</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\boards\boards.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf_erratas.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_wdt.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_irqs.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_prs.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_gpiote.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_drv_clock.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_rtc.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_memobj.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_compiler.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_pwm.h</file>
-            <file>$PROJ_DIR$\_build\Application\Src\main.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_assert.o</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
-            <file>$PROJ_DIR$\_build\nRF_Segger_RTT\SEGGER_RTT_Syscalls_IAR.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_ringbuf.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_balloc.o</file>
-            <file>$PROJ_DIR$\_build\pwm_driver_pca10056.hex</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\boards\pca10056.h</file>
-            <file>$PROJ_DIR$\..\..\..\main.c</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\app_util_platform.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\app_scheduler.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_fprintf_format.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c</file>
             <file>$PROJ_DIR$\_build\nRF_Segger_RTT\SEGGER_RTT.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nordic_common.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_sortlist.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_os.h</file>
-            <file>$PROJ_DIR$\_build\Application\Src\ws2812b.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_uarte.h</file>
-            <file>$PROJ_DIR$\_build\None\system_nrf52840.o</file>
-            <file>$PROJ_DIR$\_build\pwm_driver_pca10056.out</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_backend_uart.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_strerror.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_atomic.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_default_backends.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\delay\nrf_delay.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\mpu_armv7.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\compiler_abstraction.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_atomic.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo_internal.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_nvic.o</file>
-            <file>$PROJ_DIR$\_build\Board Support\bsp.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_atomic_internal.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_macros.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_backend_interface.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_clock.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\iar_intrinsics_common.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.h</file>
-            <file>$PROJ_DIR$\_build\pwm_driver_pca10056.map</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf51_to_nrf52840.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\nrfx_config.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_clock.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_uart.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\nrfx_log.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\app_timer.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\apply_old_config.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_default_backends.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_frontend.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_uart.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_gpio.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_instance.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_ctrl_internal.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_common.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_gpiote.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_pwm.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_uarte.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_str_formatter.o</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_uarte.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52_to_nrf52840.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_types.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_iccarm.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\LowLevelIOInterface.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52840_peripherals.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\app_button.o</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_gpiote.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52_to_nrf52840.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\LowLevelIOInterface.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_fprintf_format.o</file>
+            <file>$PROJ_DIR$\_build\pwm_driver_pca10056.out</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_strerror.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_atomic.o</file>
+            <file>$PROJ_DIR$\_build\None\system_nrf52840.o</file>
+            <file>$PROJ_DIR$\_build\Application\Src\ws2812b.o</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_backend_uart.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Segger_RTT\SEGGER_RTT_printf.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_internal.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_uarte.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_uarte.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_os.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\app_scheduler.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_gpio.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_Conf.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_common.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_gpiote.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_pwm.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\nrfx_errors.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_backend_rtt.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf53_erratas.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_uart.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\core_cm4.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_gpiote.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_resources.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\experimental_section_vars\nrf_section.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\app_error.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_ctrl.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52840_bitfields.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf51_erratas.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_str_formatter.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_errors.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\app_timer2.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_backend_rtt.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_gpiote.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_ctrl_internal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_pwm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_internal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_types.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_uarte.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Segger_RTT\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52840_bitfields.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\app_button.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_backend_uart.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_str_formatter.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_resources.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\experimental_section_vars\nrf_section.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52840.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\drv_rtc.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Libraries\app_timer2.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_uart.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\app_error.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_coredep.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic_internal.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_clock.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_backend_serial.o</file>
-            <file>$PROJ_DIR$\_build\Board Definition\boards.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\nrfx_common.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.h</file>
             <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_fprintf.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52_erratas.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\intrinsics.h</file>
-            <file>$PROJ_DIR$\_build\Application\main.o</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_pwm.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf91_erratas.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_uart.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf_peripherals.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\nrfx.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_irqs_nrf52840.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\_build\Application\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_ctrl.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\core_cm4.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_pwm.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_errors.h</file>
             <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\..\..\..\Src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_gpiote.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf52_erratas.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\nrfx_errors.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_str_formatter.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_clock.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf53_erratas.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf91_erratas.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic_internal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.h</file>
+            <file>$PROJ_DIR$\_build\Board Definition\boards.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_backend_serial.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_atfifo.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_drv_uart.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\app_error_weak.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_irqs_nrf52840.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_irqs.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_gpiote.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\nrfx_common.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_pwm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\boards\boards.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_prs.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp_config.h</file>
+            <file>$PROJ_DIR$\_build\None\iar_startup_nrf52840.o.rsp</file>
+            <file>$PROJ_DIR$\pwm_driver_iar_nRF5x.icf</file>
+            <file>$PROJ_DIR$\_build\None\iar_startup_nrf52840.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_bitmask.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_power_clock.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\drv_rtc.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf_peripherals.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\nrfx_glue.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_uart.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\app_error_handler_iar.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_soc.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_atomic.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_rtc.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Segger_RTT\SEGGER_RTT_Syscalls_IAR.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\app_util_platform.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\boards\pca10056.h</file>
+            <file>$PROJ_DIR$\_build\pwm_driver_pca10056.hex</file>
+            <file>$PROJ_DIR$\..\..\..\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\_build\Application\Src\main.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_assert.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_memobj.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_balloc.o</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_drv_clock.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf_erratas.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_ringbuf.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_wdt.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_pwm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_str_formatter.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\delay\nrf_delay.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\apply_old_config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_gpiote.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_frontend.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_pwm.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_atomic.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\app_timer2.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_uart.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_handler_iar.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\drv_rtc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_default_backends.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_uarte.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_clock.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_Syscalls_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_atomic_internal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_rtt.c</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_sortlist.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\app_timer.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\nrfx_log.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iar_intrinsics_common.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo_internal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\compiler_abstraction.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrf_nvic.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Drivers\nrfx_uart.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_default_backends.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf51_to_nrf52840.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\_build\Board Support\bsp.o</file>
+            <file>$PROJ_DIR$\_build\pwm_driver_pca10056.map</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\sdk_macros.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\nrf.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\hal\nrf_clock.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\toolchain\cmsis\include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_backend_interface.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_backend_uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\nrfx_config.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Libraries\nrf_atomic.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\nrf_log_instance.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_default_backends.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_clock.h</file>
+            <file>$PROJ_DIR$\_build\nRF_Log\nrf_log_frontend.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\iar_startup_nrf52840.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\components\boards\boards.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.c</file>
+            <file>$PROJ_DIR$\..\config\sdk_config.h</file>
             <file>$PROJ_DIR$\..\..\..\Inc\ws2812b.h</file>
             <file>$PROJ_DIR$\..\..\..\Src\ws2812b.c</file>
-            <file>$PROJ_DIR$\..\config\sdk_config.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\iar_startup_nrf52840.s</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_uart.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.c</file>
+            <file>$PROJ_DIR$\..\..\..\Src\main.c</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_uart.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_gpiote.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_handler_iar.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_pwm.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\soc\nrfx_atomic.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_uarte.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_clock.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\app_timer2.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\components\boards\boards.c</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 79</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 49 94 134 48 111 119 114 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_rtt.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 150</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 49 94 134 48 111 114 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 176</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 154 158 92 162 117 167 130 182 120 144 138 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 164 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_uart.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 141</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 154 158 92 76 117 130 182 144 138 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 164 107 104 100 29 188 124 178 149 152 73 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_default_backends.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 81</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 154 158 92 76 162 108 117 130 120 144 138 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 65</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 37 78 161 175 49 94 134 48 111 114 68 160 121 168 90 71 47 132 137 153 83 197 164 43 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_frontend.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 109</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 33 154 158 179 92 162 117 167 130 120 144 138 156 119 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 164 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_str_formatter.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 127</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 125 78 161 175 146 115 49 94 134 48 111 154 158 92 162 117 167 130 120 144 138 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 164 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 66</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 96 118 184 78 175 146 49 94 134 48 111 70 165 131 68 160 168 47 132 137 153 83 197 102 145 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_printf.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 143</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 96 118 184 37 78 175 146 115 94 134 48 111 70 165 131 68 160 168 47 132 137 153 83 197 102 145 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_Syscalls_IAR.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 55</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 133 96 118 184 78 175 146 94 63 134 48 111 70 165 131 68 160 168 47 132 137 153 83 197 102 145 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\drv_rtc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 34</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 82 158 179 117 130 144 119 170 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 100 29 178 149 45 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 53</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 118 78 175 146 94 134 48 111 70 165 68 160 168 47 132 137 153 83 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 58</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 154 158 179 117 130 144 119 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 181</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 37 78 161 175 49 94 134 48 111 114 68 160 121 168 90 71 47 132 137 153 83 197 164 43 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 85</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 49 94 134 48 111 33 173 114 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 28</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 49 94 134 48 111 101 86 158 179 117 130 144 119 114 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 46</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 33 154 158 117 130 138 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 56</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 33 156 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 69</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 49 94 134 48 111 158 179 117 130 144 140 119 114 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 62</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 118 78 175 146 94 134 48 111 70 165 131 68 160 168 47 132 137 153 83 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\_build\pwm_driver_pca10056.hex</name>
-            <inputs>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 75</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\main.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -560,7 +236,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 36 60 111 154 189 180 82 158 179 92 162 108 117 130 120 144 138 140 119 106 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 126 50 100 29 95 11 186 178 149 103 116 123 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 115 198 69 192 186 15 122 143 12 131 24 4 65 199 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
@@ -569,101 +245,56 @@
             <outputs>
                 <tool>
                     <name>OBJCOPY</name>
-                    <file> 59</file>
+                    <file> 119</file>
                 </tool>
                 <tool>
                     <name>ILINK</name>
-                    <file> 98</file>
+                    <file> 194</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 54 113 193 51 72 177 88 32 74 44 24 87 31 80 174 42 41 147 110 128 136 159 27 26 64 171 62 34 53 28 85 58 181 65 46 56 69 79 150 176 141 81 109 127 66 55 143 30</file>
+                    <file> 116 189 73 123 18 84 193 100 17 128 87 185 108 16 78 91 95 71 187 20 45 55 107 88 25 33 114 103 124 86 204 127 59 10 126 130 179 13 34 85 46 206 208 48 1 112 42 99</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\Src\main.c</name>
+            <name>$PROJ_DIR$\_build\pwm_driver_pca10056.hex</name>
+            <inputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\main.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 51</file>
+                    <file> 62</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 82 70 165 114 131 68 160 168 157 47 132 137 153 83 195 197 107 100 29 178 149 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 94 118 143 56 66 81 140 51 67 201 64 190 205 39 36 38 47 19 152 180 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 14 133 203 105 207 102 93 92 76 197 26 37 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\Src\ws2812b.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 72</file>
+                    <file> 85</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 82 70 165 114 131 68 160 168 157 47 132 137 153 83 195 197 107 50 100 29 186 178 149 116 123 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 98 75</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\iar_startup_nrf52840.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 32</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 35</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 74</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 118 78 175 94 48 47 132 137 153 83 84 112 166 99 169 163 183 129 151 187 38 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 41</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 158 179 117 130 144 119 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 100 29 105 178 149 97 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 56 51 201 64 205 77 39 68 36 38 47 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 50 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
@@ -672,43 +303,43 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 110</file>
+                    <file> 187</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 158 179 117 130 144 119 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 100 29 105 188 178 149 97 116 152 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 51 67 205 39 38 152 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 203 105 181 106 92 76 188 26 54 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_str_formatter.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 159</file>
+                    <file> 48</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 118 78 175 146 94 134 48 111 70 165 68 168 47 132 137 153 83 84 112 99 169 163 129 67</file>
+                    <file> 121 61 155 115 40 198 5 9 44 69 31 192 125 186 15 122 143 56 51 201 64 205 77 39 36 38 47 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 50 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_uart.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 24</file>
+                    <file> 13</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 118 78 161 175 146 94 134 48 111 70 165 114 131 68 160 168 157 47 132 137 153 83 197 107 104 100 29 188 124 178 149 152 73 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 40 198 9 44 69 125 186 15 122 143 152 150 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
@@ -717,43 +348,28 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 42</file>
+                    <file> 91</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 158 179 117 130 144 119 70 165 114 131 68 160 12 121 168 90 71 157 47 132 137 153 83 197 107 100 29 105 155 178 149 116 139 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 51 67 205 39 38 152 8 83 150 28 2 57 101 29 72 195 22 49 131 24 4 65 199 214 142 203 105 181 74 92 76 26 30 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_handler_iar.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_frontend.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 27</file>
+                    <file> 208</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 70 165 114 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 64</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 77 93 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 110 56 51 67 201 64 205 77 39 36 38 47 70 152 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 50 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
@@ -762,88 +378,43 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 147</file>
+                    <file> 71</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 158 179 117 130 144 119 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 100 29 105 186 178 149 116 123 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 51 67 205 39 38 152 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 203 105 181 93 92 76 26 37 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 31</file>
+                    <file> 126</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 52 118 175 115 94 134 48 111 77 47 132 137 153 83 84 112 99 169 163 129 67</file>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 110 56 51 205 39 47 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 44</file>
+                    <file> 55</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 158 179 117 130 144 119 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 126 100 29 95 11 178 149 103 39 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 136</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 180 158 179 117 130 144 140 119 106 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 122 100 29 155 178 149 116 139 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 142 118 78 161 175 146 115 49 94 134 48 111 154 158 179 92 162 117 130 120 144 138 119 70 165 114 131 68 160 121 168 90 71 47 132 137 153 83 197 84 112 99 169 163 129 67</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 87</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 52 118 175 115 94 134 48 111 77 47 132 137 153 83 84 112 99 169 163 129 67</file>
+                    <file> 121 61 155 198 9 69 31 186 15 122 143 8 83 2 72 131 24 4 65 199 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
@@ -852,43 +423,28 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 80</file>
+                    <file> 16</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 118 78 161 175 146 94 134 48 111 70 165 114 131 68 160 168 157 47 132 137 153 83 197 107 100 29 178 149 84 112 99 169 163 135 129 190 67 191 23 89 172 40 192</file>
+                    <file> 121 61 155 198 9 44 69 31 186 15 122 143 8 83 150 28 2 57 72 49 131 24 4 65 199 214 142 203 105 92 76 184 196 191 52 43 3 6 104 23 60 109 176 58 90 89</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_uarte.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 128</file>
+                    <file> 127</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 158 179 117 130 144 119 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 100 29 105 124 178 149 97 116 73 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_clock.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 174</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 158 179 117 130 144 119 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 100 29 105 95 11 178 149 103 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 56 51 67 205 39 38 152 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
                 </tool>
             </inputs>
         </file>
@@ -897,18 +453,78 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 171</file>
+                    <file> 33</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 142 118 78 161 175 146 49 94 134 48 111 101 82 158 179 117 130 144 140 119 106 170 70 165 114 131 68 160 121 168 90 71 157 47 132 137 153 83 197 107 100 29 178 149 45 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 138 140 51 67 205 39 38 19 152 180 53 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 203 105 92 76 111 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 56 51 201 202 205 39 68 38 47 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 50 142 200 203 105 106 41 92 76 54 21 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 198 9 69 31 186 15 122 143 8 83 2 57 72 131 24 4 65 199 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_handler_iar.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 8 83 150 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\drv_rtc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 140 51 67 205 39 38 152 53 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 203 105 92 76 111 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -918,7 +534,322 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 118 78 161 175 146 94 134 48 36 60 111 189 25 180 158 117 130 140 106 70 165 114 131 68 160 168 157 47 132 137 153 83 197 107 100 29 178 149 116 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 56 51 67 201 64 205 39 36 38 47 152 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 125 186 15 122 143 138 183 51 67 205 39 38 152 150 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 117 9 44 69 125 186 15 122 143 150 2 57 29 72 195 22 131 24 4 65 199 214 50 96 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 114</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 198 9 69 31 186 15 122 143 8 83 28 2 57 72 131 24 4 65 199 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 95</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 51 67 205 39 38 152 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 203 105 181 92 76 188 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_default_backends.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 206</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 56 51 201 202 64 190 205 39 36 38 47 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 182 198 63 9 69 31 125 186 15 122 143 8 83 28 2 57 72 131 24 4 65 199 214 139 27 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_uarte.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 51 67 205 39 38 152 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 203 105 181 41 92 76 188 26 21 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 81 51 67 205 39 38 19 152 180 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 35 203 105 74 92 76 26 30 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 179</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 125 186 15 122 143 51 67 205 39 38 19 152 150 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 115 182 198 63 117 9 69 31 192 186 15 122 143 8 83 28 2 57 72 131 24 4 65 199 214 139 27 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 51 67 205 39 38 152 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 203 105 181 207 102 92 76 197 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 117 9 44 69 125 186 15 122 143 150 2 57 29 72 195 22 131 24 4 65 199 214 50 96 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_Syscalls_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 112</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 7 182 198 63 9 69 31 186 113 15 122 143 8 83 28 2 57 72 131 24 4 65 199 214 139 27 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 12 137 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 204</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 125 186 15 122 143 110 82 150 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 108</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 115 198 69 192 186 15 122 143 12 131 24 4 65 199 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 130</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 110 70 8 83 150 28 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_rtt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 125 186 15 122 143 150 2 57 29 72 195 22 131 24 4 65 199 214 184 196 191 52 43 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 128</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 51 67 205 39 38 152 8 83 150 28 2 57 29 72 195 22 49 131 24 4 65 199 214 142 14 203 105 207 102 92 76 197 132 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\bsp\bsp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 198 9 44 69 31 186 15 122 94 118 143 66 97 81 51 205 39 19 180 8 83 150 28 2 57 72 49 131 24 4 65 199 214 142 203 105 92 76 26 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\iar_startup_nrf52840.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 100</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 98</file>
                 </tool>
             </inputs>
         </file>
@@ -927,98 +858,87 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 177</file>
+                    <file> 84</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 57 148 91 118 78 161 175 146 94 134 48 36 60 111 70 165 114 131 68 160 168 157 47 132 137 153 83 197 107 100 29 178 149 116 84 112 99 169 163 135 129 190 67 191 23 172 40 192</file>
+                    <file> 121 61 155 198 9 44 69 31 186 15 122 94 118 143 8 83 150 28 2 57 72 49 131 24 4 65 199 214 142 203 105 92 76 26 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
                 </tool>
             </inputs>
         </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 198 9 69 186 122 131 24 4 65 199 184 196 32 191 52 43 75 6 79 80 129 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Src\ws2812b.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 40 198 9 44 69 31 125 186 15 122 143 140 8 83 150 28 2 57 72 49 131 24 4 65 199 215 214 142 133 203 105 93 92 76 26 37 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 123</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 115 40 198 9 44 69 31 192 125 186 15 122 143 140 8 83 150 28 2 57 72 49 131 24 4 65 199 215 214 142 203 105 92 76 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121 61 155 198 9 44 69 31 186 15 122 143 8 83 150 28 2 57 72 49 131 24 4 65 199 214 142 200 203 105 106 41 92 76 54 21 184 196 191 52 43 3 6 104 23 60 109 58 90 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 194 11</file>
+                </tool>
+            </outputs>
+        </file>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_rtt.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_uart.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_default_backends.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_frontend.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_str_formatter.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_printf.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_Syscalls_IAR.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\drv_rtc.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
@@ -1026,19 +946,7 @@
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\Src\main.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\Src\ws2812b.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
@@ -1046,11 +954,11 @@
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_str_formatter.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_uart.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\strerror\nrf_strerror.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
@@ -1058,11 +966,7 @@
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_handler_iar.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_frontend.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
@@ -1070,23 +974,11 @@
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\memobj\nrf_memobj.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
@@ -1094,7 +986,71 @@
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\balloc\nrf_balloc.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\app_timer2.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_uart.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\nrf_assert.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_handler_iar.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\drv_rtc.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_error_weak.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic_fifo\nrf_atfifo.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf_format.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\util\app_util_platform.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_default_backends.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
             <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_uarte.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\button\app_button.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_printf.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
@@ -1102,7 +1058,35 @@
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\timer\app_timer2.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\fprintf\nrf_fprintf.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_Syscalls_IAR.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\atomic\nrf_atomic.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\ringbuf\nrf_ringbuf.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_rtt.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
@@ -1111,6 +1095,22 @@
         </forcedrebuild>
         <forcedrebuild>
             <name>$PROJ_DIR$\..\..\..\..\..\..\components\boards\boards.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Src\ws2812b.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Src\main.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_uart.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>

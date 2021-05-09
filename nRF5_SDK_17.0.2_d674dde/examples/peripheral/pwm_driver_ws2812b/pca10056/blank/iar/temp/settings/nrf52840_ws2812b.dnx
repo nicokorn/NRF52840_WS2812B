@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<settings>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 0 "EMUL_CODE" "{C:\Users\nico1\OneDrive\Documents\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\main.c}.227.7" 0 0 1 "" 0 "" 0</Bp0>
+        <Count>1</Count>
+    </Breakpoints2>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+    <PlDriver>
+        <MemConfigValue />
+    </PlDriver>
+    <ArmDriver>
+        <EnableCache>0</EnableCache>
+    </ArmDriver>
+</settings>

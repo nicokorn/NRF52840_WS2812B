@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <settings>
     <DebugChecksum>
-        <Checksum>3721640844</Checksum>
+        <Checksum>1654824680</Checksum>
     </DebugChecksum>
     <PlDriver>
         <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\NordicSemi\nRF52840_xxAA.ddf</MemConfigValue>
@@ -64,6 +64,9 @@
         <Fmt0>nrf_pwm_values_common_t[64]	4	0</Fmt0>
         <Fmt1>nrf_pwm_values_common_t[70]	4	0</Fmt1>
     </array_types>
+    <watch_formats>
+        <Fmt0>{W}1:i	3	0</Fmt0>
+    </watch_formats>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>

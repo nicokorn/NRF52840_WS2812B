@@ -1,0 +1,40 @@
+D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\nrf52840_xxaa\BrowseInfo\nRF_Segger_RTT\SEGGER_RTT.pbi: \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\external\segger_rtt\SEGGER_RTT.c \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\external\segger_rtt/SEGGER_RTT.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\external\segger_rtt/SEGGER_RTT_Conf.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\nordic_common.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\app_util_platform.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Full.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk\compiler_abstraction.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk\nrf.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include\core_cm4.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include/cmsis_version.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include/cmsis_compiler.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_iccarm.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\toolchain\cmsis\include/mpu_armv7.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/system_nrf52840.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840_bitfields.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf51_to_nrf52840.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/nrf52_to_nrf52840.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\mdk/compiler_abstraction.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/nrf_assert.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/app_error.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdio.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ysizet.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdbool.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/sdk_errors.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/nordic_common.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util/app_error_weak.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\config\sdk_config.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\intrinsics.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iar_intrinsics_common.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\string.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h
