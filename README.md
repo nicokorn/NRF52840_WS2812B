@@ -20,6 +20,8 @@ array entity. A future version will solve this issue.
 <html>
 <body>
 
+<h2> Source code is in the following path: NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b</h2>
+
 <h2>The ws2812b example</h2>
 <img src="https://github.com/nicokorn/NRF52840_WS2812B/blob/main/docs/WS2812B.jpg" alt="st32f1xx_ws2812b1">
 <h2>WS2812B protocol timing and signal</h2>
