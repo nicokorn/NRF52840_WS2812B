@@ -3,15 +3,22 @@
 ///
 /// \brief     Main C Source File
 ///
-/// \details   Example code for using the ws2812b library for the nrf52840
-///            Microcontroller. The ws2812b leds are controlled by the pwm
-///            peripheral. Depending on the dutycicle the ws2812b interprets
-///            a 1 or 0 bit. A ws2812b needs 24 bits to get all co
-///            colorinformation it needs. The 24 bits are splittet into R
-///            red (8b), green (8) and blue (8b). ABits are being shiftet
-///            through all leds. After finishing the shifting, the line needs
-///            to be set low for at least 50 0 us so the leds accept their
+/// \details   Example code for using Nico's ws2812b library for the nrf52840
+///            Microcontroller. This example code works out of the box with the
+///            IAR workbench, J-Link debugger/programmer and the Adafruit
+///            Featherboard nrf52840 with the integrated ws2812b led.
+///            Amount of leds and the pins on which they are connected to can be
+///            set in the ws2812b library. The ws2812b leds are controlled by 
+///            the pwm peripheral. Depending on the dutycycle the ws2812b leds 
+///            interprets a 1 or 0 bit and holds a 24 bit shiftregister. The 24 
+///            bits are splittet into red (8b), green (8) and blue (8b). 
+///            Bits are being shiftet through all leds connected in serial. 
+///            After finishing the shifting, the line needs
+///            to be set low for at least 50 us, so the leds accept their
 ///            shift registers thus emitting their colours.
+///            The library is heavily ram consuming because the pwm sequence
+///            arrays are defined as 16bit uints and 1 ws2812b bit is used as
+///            array entity. A future version will solve this issue.
 ///
 /// \author    Nico Korn
 ///
@@ -53,13 +60,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "nrf_drv_pwm.h"
-#include "app_util_platform.h"
-#include "app_error.h"
-#include "boards.h"
-#include "bsp.h"
-#include "app_timer.h"
-#include "nrf_drv_clock.h"
 #include "nrf_delay.h"
 #include "ws2812b.h"
 
@@ -70,7 +70,6 @@
 // Private variables **********************************************************
 
 // Private function prototypes ************************************************
-static void init_clk( void );
 
 // Global variables ***********************************************************
 
@@ -84,8 +83,6 @@ static void init_clk( void );
 int main( void )
 {
    static uint8_t i;
-  
-   init_clk();
 
    WS2812B_init();
 
@@ -93,21 +90,8 @@ int main( void )
    {
       i++;
       WS2812B_clearBuffer();
-      WS2812B_setPixel(i%PIXEL_COUNT,0xff,0,0);//rand()%0xFF,rand()%0xFF,rand()%0xFF
+      WS2812B_setPixel(++i%PIXEL_COUNT, 0x00,0x00,0xff);//rand()%0xFF,rand()%0xFF,rand()%0xFF
       WS2812B_sendBuffer();
       nrf_delay_ms(10); 
    }
-}
-
-// ----------------------------------------------------------------------------
-/// \brief     Init the clocks.
-///
-/// \param     none
-///
-/// \return    none
-static void init_clk( void )
-{
-    APP_ERROR_CHECK(nrf_drv_clock_init());
-    nrf_drv_clock_lfclk_request(NULL);
-    APP_ERROR_CHECK(app_timer_init());
 }

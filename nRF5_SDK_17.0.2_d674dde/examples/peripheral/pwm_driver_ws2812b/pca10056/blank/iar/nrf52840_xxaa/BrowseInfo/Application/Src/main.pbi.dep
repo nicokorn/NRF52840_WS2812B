@@ -11,8 +11,7 @@ D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_drive
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_stdlib.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\string.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_pwm.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_pwm.h \
+  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\delay\nrf_delay.h \
   D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\nrfx.h \
   D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\integration\nrfx\nrfx_config.h \
   D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\config\sdk_config.h \
@@ -55,21 +54,4 @@ D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_drive
   D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\sdk_errors.h \
   D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\sdk_resources.h \
   D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\drivers/nrfx_errors.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\hal/nrf_pwm.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\util\app_error.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\boards\boards.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\hal\nrf_gpio.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\boards/pca10056.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\bsp\bsp.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\button\app_button.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\timer\app_timer.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\log\nrf_log_instance.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\experimental_section_vars\nrf_section.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\log/nrf_log_types.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\sortlist\nrf_sortlist.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_clock.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_clock.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\hal/nrf_clock.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_power_clock.h \
-  D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\..\..\..\components\libraries\delay\nrf_delay.h \
   D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\..\..\..\Inc\ws2812b.h

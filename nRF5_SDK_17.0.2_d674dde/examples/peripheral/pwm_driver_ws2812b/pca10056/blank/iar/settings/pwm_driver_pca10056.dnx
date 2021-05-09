@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <settings>
     <DebugChecksum>
-        <Checksum>1540100371</Checksum>
+        <Checksum>3721640844</Checksum>
     </DebugChecksum>
     <PlDriver>
         <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\NordicSemi\nRF52840_xxAA.ddf</MemConfigValue>

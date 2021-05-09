@@ -3,7 +3,14 @@
 ///
 /// \brief     WS2812B C Source File
 ///
-/// \details   Driver Module for WS2812B leds.
+/// \details   The ws2812b leds are controlled by the pwm peripheral. Depending 
+///            on the dutycycle the ws2812b leds 
+///            interprets a 1 or 0 bit and holds a 24 bit shiftregister. The 24 
+///            bits are splittet into red (8b), green (8) and blue (8b). 
+///            Bits are being shiftet through all leds connected in serial. 
+///            After finishing the shifting, the line needs
+///            to be set low for at least 50 us, so the leds accept their
+///            shift registers thus emitting their colours.
 ///
 /// \author    Nico Korn
 ///
@@ -45,23 +52,24 @@
 #include <stdio.h>
 #include <string.h>
 #include "nrf_drv_pwm.h"
-#include "app_util_platform.h"
-#include "app_error.h"
-#include "boards.h"
-#include "bsp.h"
-#include "app_timer.h"
-#include "nrf_drv_clock.h"
 #include "nrf_delay.h"
+#include "nrf_gpio.h"
 #include "ws2812b.h"
 
 // Private define *************************************************************
+#define PIXEL_BIT_SIZE           ( 24u )
+#define WS2812B_PWM_T            ( 20u ) // 20 ticks @ 16 MHz equals 1250 ns
+#define WS2812B_1                ( 15u | 0x8000 ) // 15 ticks @ 16 MHz equals 937.5 ns, the MSB defines the PWM polarity during the sequence
+#define WS2812B_0                ( 6u | 0x8000 )  // 6 ticks @ 16 MHz equals 375 ns, the MSB defines the PWM polarity during the sequence
+#define WS2812B                  NRF_GPIO_PIN_MAP(WS2812B_PORT,WS2812B_PIN)
+#define WS2812B_RESET_LOW        45
 
 // Private types     **********************************************************
 
 // Private variables **********************************************************
-static bool WS2812B_TX_CPLT; 
+static WS2812B_StatusTypeDef WS2812B_State = WS2812B_RESET; 
 static nrf_drv_pwm_t m_pwm0 = NRF_DRV_PWM_INSTANCE(0);
-static nrf_pwm_values_common_t WS2812B_Buffer[RESET_ZEROS_AT_START+PIXEL_COUNT*PIXEL_BIT_SIZE];
+static nrf_pwm_values_common_t WS2812B_Buffer[WS2812B_RESET_LOW+PIXEL_COUNT*PIXEL_BIT_SIZE];
 nrf_pwm_sequence_t const seq =
 {
     .values.p_common = WS2812B_Buffer,
@@ -86,7 +94,7 @@ void WS2812B_pwmhandler( nrf_drv_pwm_evt_type_t event_type )
 {
    if( event_type == NRF_DRV_PWM_EVT_FINISHED )
    {
-      WS2812B_TX_CPLT = true;
+      WS2812B_State = WS2812B_READY;
    }
 }
 
@@ -102,9 +110,11 @@ WS2812B_StatusTypeDef WS2812B_init( void )
    nrf_gpio_cfg_output(WS2812B);
    nrf_gpio_pin_clear(WS2812B);
   
-   for(uint8_t i=0; i<RESET_ZEROS_AT_START; i++)
+   // the end of the data buffer needs to set the output low for at least 50 us,
+   // so the leds will accept their bit shiftregisters. This is done by 0 duty
+   // cycles for WS2812B_RESET_LOW times.
+   for(uint8_t i=0; i<WS2812B_RESET_LOW; i++)
    {
-      //WS2812B_Buffer[i] = 0x8000;
       WS2812B_Buffer[PIXEL_COUNT*PIXEL_BIT_SIZE+i] = 0x8000;
    }
 
@@ -112,7 +122,7 @@ WS2812B_StatusTypeDef WS2812B_init( void )
     {
         .output_pins =
         {
-            WS2812B, // channel 0 NRF_DRV_PWM_PIN_INVERTED
+            WS2812B, // channel 0, if you would OR with "NRF_DRV_PWM_PIN_INVERTED", the pwm idle state would be high
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 1
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 2
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 3
@@ -126,7 +136,7 @@ WS2812B_StatusTypeDef WS2812B_init( void )
     };
     APP_ERROR_CHECK(nrf_drv_pwm_init(&m_pwm0, &config0, WS2812B_pwmhandler));
     
-    WS2812B_TX_CPLT = true; 
+    WS2812B_State = WS2812B_READY;
     
     return WS2812B_OK;
 }
@@ -139,11 +149,11 @@ WS2812B_StatusTypeDef WS2812B_init( void )
 /// \return    none
 void WS2812B_sendBuffer( void )
 {
-   WS2812B_TX_CPLT = false;
+   WS2812B_State = WS2812B_BUSY;
   
    nrf_drv_pwm_simple_playback(&m_pwm0, &seq, 1, NRF_DRV_PWM_FLAG_STOP);
     
-   while( WS2812B_TX_CPLT != true );
+   while( WS2812B_State != WS2812B_READY );
 }
 
 // ----------------------------------------------------------------------------
@@ -156,7 +166,6 @@ void WS2812B_clearBuffer( void )
 {
    for( uint16_t i=0; i<PIXEL_COUNT*PIXEL_BIT_SIZE; i++ )
    {
-      //WS2812B_Buffer[RESET_ZEROS_AT_START+i] = WS2812B_0;
       WS2812B_Buffer[i] = WS2812B_0;
    }
 }
@@ -176,32 +185,26 @@ void WS2812B_setPixel( uint16_t pixel_pos, uint8_t red, uint8_t green, uint8_t b
   {
     if( (0x80 & (red<<i)) == 0x80 )
     {
-      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_1;
       WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_1;
     }
     else
     {
-      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_0;
       WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+8+i] = WS2812B_0;
     }
     if( (0x80 & (green<<i)) == 0x80 )
     {
-      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_1;
       WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_1;
     }
     else
     {
-      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_0;
       WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+i] = WS2812B_0;
     }
     if( (0x80 & (blue<<i)) == 0x80 )
     {
-      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_1;
       WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_1;
     }
     else
     {
-      //WS2812B_Buffer[RESET_ZEROS_AT_START+pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_0;
       WS2812B_Buffer[pixel_pos*PIXEL_BIT_SIZE+16+i] = WS2812B_0;
     }
   }

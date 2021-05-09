@@ -64,13 +64,6 @@
 #define WS2812B_PORT             ( 0u )
 #endif
 
-#define PIXEL_BIT_SIZE           ( 24u )
-#define WS2812B_PWM_T            ( 20u ) // 20 ticks @ 16 MHz equals 1250 ns
-#define WS2812B_1                ( 15u | 0x8000 ) // 15 ticks @ 16 MHz equals 937.5 ns, the MSB defines the PWM polarity during the sequence
-#define WS2812B_0                ( 6u | 0x8000 )  // 6 ticks @ 16 MHz equals 375 ns, the MSB defines the PWM polarity during the sequence
-#define WS2812B                  NRF_GPIO_PIN_MAP(WS2812B_PORT,WS2812B_PIN)
-#define RESET_ZEROS_AT_START     45
-
 // Exported types *************************************************************
 typedef enum
 {
