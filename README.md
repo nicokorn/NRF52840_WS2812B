@@ -1,4 +1,4 @@
-# STM32F1XX_WS2812B
+# NRF52840_WS2812B
 
 Example code for using Nico's ws2812b library for the nrf52840
 Microcontroller. This example code works out of the box with the
