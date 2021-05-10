@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  09/May/2021  13:07:27
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  10/May/2021  18:21:27
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -263,8 +263,8 @@ keep { section .intvec };
   .bss               zero     0x2000'0760     0x8  nrfx_clock.o [5]
   .bss               zero     0x2000'0768     0x8  nrfx_prs.o [5]
   .bss               zero     0x2000'0770     0x4  app_util_platform.o [6]
-  .bss               zero     0x2000'0774     0x1  main.o [1]
-                            - 0x2000'0775   0x639
+  .bss               zero     0x2000'0774     0x4  main.o [1]
+                            - 0x2000'0778   0x63c
 
 "P2", part 3 of 3:                         0x2000
   CSTACK                      0x2000'0778  0x2000  <Block>
@@ -286,8 +286,8 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x639:
-          0x2000'013c  0x639
+    1 destination range, total size 0x63c:
+          0x2000'013c  0x63c
 
 Copy/lz77 (__iar_lz77_init_single3)
     1 source range, total size 0x66 (32% of destination):
@@ -308,10 +308,10 @@ command line/config:
     Total:
 
 D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\_build\Application\Src: [1]
-    main.o                           72                 1
+    main.o                           72                 4
     ws2812b.o                       268       49      152
     -----------------------------------------------------
-    Total:                          340       49      153
+    Total:                          340       49      156
 
 D:\GitHub\NRF52840_WS2812B\nRF5_SDK_17.0.2_d674dde\examples\peripheral\pwm_driver_ws2812b\pca10056\blank\iar\_build\Board Definition: [2]
     -----------------------------------------------------
@@ -399,7 +399,7 @@ rt7M_tl.a: [11]
     Gaps                             10        2
     Linker created                            32    8'192
 ---------------------------------------------------------
-    Grand Total:                 10'000      498   10'101
+    Grand Total:                 10'000      498   10'104
 
 
 *******************************************************************************
@@ -535,7 +535,7 @@ m_string_buff           0x2000'0688   0x40  Data  Lc  nrf_log_backend_uart.o [7]
 m_uart                  0x2000'0004   0x14  Data  Gb  nrf_log_backend_uart.o [7]
 m_xfer_done             0x2000'0000    0x1  Data  Lc  nrf_log_backend_uart.o [7]
 main                         0x25d1   0x36  Code  Gb  main.o [1]
-main::i                 0x2000'0774    0x1  Data  Lc  main.o [1]
+main::i                 0x2000'0774    0x4  Data  Lc  main.o [1]
 memobj_op                    0x129f   0x86  Code  Lc  nrf_memobj.o [6]
 module_idx_get                0xc9b   0x2e  Code  Lc  nrf_log_frontend.o [7]
 nrf_atomic_flag_clear_fetch
@@ -689,7 +689,7 @@ unsigned_print::_aV2C        0x1740   0x10  Data  Lc  nrf_fprintf_format.o [6]
 
   10'000 bytes of readonly  code memory
      498 bytes of readonly  data memory
-  10'101 bytes of readwrite data memory
+  10'104 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

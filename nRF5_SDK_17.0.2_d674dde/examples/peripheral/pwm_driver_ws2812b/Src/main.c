@@ -82,7 +82,7 @@
 /// \return    none
 int main( void )
 {
-   static uint8_t i;
+   static uint32_t i;
 
    WS2812B_init();
 
