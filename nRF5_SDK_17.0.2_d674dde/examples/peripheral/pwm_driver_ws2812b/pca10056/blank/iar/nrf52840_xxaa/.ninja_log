@@ -242,3 +242,10 @@
 9	294	6423668877295710	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/Application/Src/ws2812b.o	adc9d77cfb5040a2
 328	439	6423668878716801	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/nrf52840_ws2812b.out	d243c1e618b8bbef
 489	500	6423668879439667	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/nrf52840_ws2812b.hex	3ee7b355a0e8baba
+13	234	6423669687801500	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/Application/Src/main.o	19c71191c067930e
+3	287	6423669688197885	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/Application/Src/ws2812b.o	adc9d77cfb5040a2
+325	437	6423669689821740	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/nrf52840_ws2812b.out	d243c1e618b8bbef
+479	490	6423669690439677	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/nrf52840_ws2812b.hex	3ee7b355a0e8baba
+4	307	6423675842396026	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/Application/Src/ws2812b.o	adc9d77cfb5040a2
+347	484	6423675844157959	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/nrf52840_ws2812b.out	d243c1e618b8bbef
+540	550	6423675844914186	D:/GitHub/NRF52840_WS2812B/nRF5_SDK_17.0.2_d674dde/examples/peripheral/pwm_driver_ws2812b/pca10056/blank/iar/_build/nrf52840_ws2812b.hex	3ee7b355a0e8baba

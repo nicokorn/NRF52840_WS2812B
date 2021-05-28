@@ -127,7 +127,7 @@ WS2812B_StatusTypeDef WS2812B_init( void )
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 2
             NRF_DRV_PWM_PIN_NOT_USED,             // channel 3
         },
-        .irq_priority = APP_IRQ_PRIORITY_HIGHEST,
+        .irq_priority = APP_IRQ_PRIORITY_LOWEST,
         .base_clock   = NRF_PWM_CLK_16MHz,
         .count_mode   = NRF_PWM_MODE_UP,
         .top_value    = WS2812B_PWM_T,

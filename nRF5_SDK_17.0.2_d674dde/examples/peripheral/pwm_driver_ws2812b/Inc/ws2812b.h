@@ -49,8 +49,8 @@
 #include "nrf.h"
 
 // Exported defines ***********************************************************
-#define ONBOARD_LED   // used if a ws2812b led stripe is attached to GPIO Port 0, Pin 16
-//#define STRIPE_LED   // used if a ws2812b led stripe is attached to GPIO Port 0, Pin 4
+//#define ONBOARD_LED   // used if a ws2812b led stripe is attached to GPIO Port 0, Pin 16
+#define STRIPE_LED   // used if a ws2812b led stripe is attached to GPIO Port 0, Pin 4
 
 #ifdef STRIPE_LED
 #define PIXEL_COUNT              ( 18u )
